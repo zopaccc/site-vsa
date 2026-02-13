@@ -97,9 +97,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(192, 0, 0, 0.6);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255);
     z-index: 1000;
     height: 90px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -170,12 +168,6 @@ body {
     position: relative;
     padding: 8px 14px;
     border-radius: var(--radius-full);
-}
-
-.nav-link.active {
-    color: var(--primary);
-    background: rgba(5, 7, 109, 0.08);
-    font-weight: 600;
 }
 
 .nav-link::after {
