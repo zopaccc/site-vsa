@@ -27,6 +27,10 @@ function initializeNavigation() {
     const header = document.querySelector('.header');
     const navOverlay = document.getElementById('navOverlay');
 
+    if (!navToggle || !navMenu || !header) {
+        return;
+    }
+
     const closeMenu = () => {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
@@ -48,6 +52,23 @@ function initializeNavigation() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
+
+        const targetHash = link.hash;
+        if (targetHash) {
+            link.addEventListener('click', (e) => {
+                const targetSection = document.querySelector(targetHash);
+                if (targetSection) {
+                    e.preventDefault();
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const targetPosition = targetSection.offsetTop - headerHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
     });
 
     // Shrink header on scroll
@@ -83,8 +104,13 @@ function updateActiveNavLink() {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
+        const href = link.getAttribute('href') || '';
+        const hashIndex = href.indexOf('#');
+        if (hashIndex !== -1) {
+            const hash = href.slice(hashIndex + 1);
+            if (hash === current) {
+                link.classList.add('active');
+            }
         }
     });
 }

@@ -2147,16 +2147,17 @@ input:focus, select:focus {
         flex-direction: column;
         background: white;
         width: 300px;
-        max-width: 80vw;
+        max-width: 85vw;
         height: 100vh;
         height: 100dvh;
         text-align: left;
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow: -10px 0 40px rgba(0, 0, 0, 0.08);
-        padding: 5rem 1.5rem 2rem;
+        padding: calc(env(safe-area-inset-top) + 4.5rem) 1.5rem 2.5rem;
         z-index: 999;
         gap: 0;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-menu li {
@@ -2231,10 +2232,30 @@ input:focus, select:focus {
         align-items: center;
     }
 
+    .hero {
+        min-height: 100dvh;
+        height: auto;
+        justify-content: flex-start;
+        padding: 120px 1.25rem 72px;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        gap: 0.75rem;
+    }
+
     .hero-stats {
         position: static;
         transform: none;
-        margin-top: 2rem;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: 1.5rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
