@@ -2883,6 +2883,11 @@ input:focus, select:focus {
         padding-top: 64px;
     }
 
+    .hero {
+        margin-top: -64px;
+        padding-top: 64px;
+    }
+
     .header {
         height: 64px;
     }
