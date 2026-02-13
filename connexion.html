@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Connexion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class="compte-section">
+        <div class="login-wrapper">
+            <div id="loginPage">
+                <div class="login-header-section">
+                    <h1>Connexion</h1>
+                    <p>Accédez à votre espace personnel</p>
+                </div>
+                <div class="login-form-wrapper">
+                    <div class="login-error-msg" id="errorMsg"></div>
+                    <form id="loginForm">
+                        <div class="login-input-group">
+                            <label for="username">Identifiant</label>
+                            <input type="text" id="username" required autocomplete="username">
+                        </div>
+                        <div class="login-input-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" required autocomplete="current-password">
+                        </div>
+                        <button type="submit" class="login-btn-submit">Se connecter</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

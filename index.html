@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrolles Sport Athlétisme - Club d'Athlétisme Professionnel</title>
+    <meta name="description"
+        content="Club d'athlétisme professionnel à Vitrolles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">VSA</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="nav-logo">
+                    <img src="img/logovsa.png">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="index.html#club" class="nav-link">Le Club</a></li>
+                    <li><a href="index.html#actualites" class="nav-link">Actualités</a></li>
+                    <li><a href="index.html#disciplines" class="nav-link">Disciplines</a></li>
+                    <li><a href="index.html#resultats" class="nav-link">Résultats</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="nav-social">
+                        <a href="https://www.instagram.com/vitrolles_sport_athletisme/" target="_blank"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/vitrollessportathletisme" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="nav-divider"></div>
+                    <a href="competitions.html" class="nav-cta">
+                        <i class="fas fa-pen-to-square"></i> Inscription
+                    </a>
+                    <a href="/connexion.html" class="nav-user" aria-label="Connexion">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Vitrolles Sport Athlétisme</h1>
+            <p class="hero-subtitle">Excellence, Performance, Passion</p>
+            <p class="hero-description">Découvrez l'athlétisme sous toutes ses formes au Stade Jules-Ladoumègue</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Rejoignez-nous</a>
+                <a href="#disciplines" class="btn btn-secondary">Nos Disciplines</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">150+</span>
+                <span class="stat-label">Licenciés</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Disciplines</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">Années d'expérience</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-separator">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,0 L0,0 Z" fill="#04088a"/>
+        </svg>
+    </div>
+
+    <section id="club" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Club</h2>
+                <p>Une passion partagée pour l'athlétisme depuis des décennies</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Vitrolles Sport Athlétisme</h3>
+                    <p>Le Vitrolles Sport Athlétisme est un club dynamique situé au cœur des Bouches-du-Rhône, offrant
+                        un encadrement professionnel et une formation complète dans toutes les disciplines de
+                        l'athlétisme.</p>
+                    <p>Notre club accueille les athlètes de tous niveaux, des débutants aux compétiteurs confirmés, avec
+                        un encadrement qualifié et des installations modernes au Stade Jules-Ladoumègue.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-medal"></i>
+                            <span>Encadrement professionnel</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Tous niveaux acceptés</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <span>Compétitions régulières</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/athlete.png" alt="Athlètes du VSA en entraînement" 
+                         style="width: 100%; height: 500px; object-fit: cover; object-position: center top; border-radius: 16px; display: block;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="actualites" id="actualites">
+        <div class="container">
+            <div class="section-header">
+                <h2>Actualités</h2>
+                <p>Restez informés des dernières nouvelles du club, des résultats de compétitions et des événements à
+                    venir</p>
+            </div>
+            <div class="actualites-grid">
+                <article class="actualite-card">
+                    <div class="card-image">
+                        <i class="fas fa-trophy"></i>
+                        <span class="card-date">5 Juin 2025</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category cat-competition">Compétitions</span>
+                        <h3 class="card-title">Excellents résultats aux Championnats Régionaux</h3>
+                        <p class="card-excerpt">Nos athlètes se sont illustrés lors des derniers championnats régionaux
+                            avec plusieurs podiums et qualifications nationales...</p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <i class="fas fa-user"></i>
+                                <span>Équipe VSA</span>
+                            </div>
+                            <button class="read-more" onclick="openModal('modal1')">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="actualite-card">
+                    <div class="card-image">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="card-date">2 Juin 2025</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category cat-evenement">Événements</span>
+                        <h3 class="card-title">Journée Portes Ouvertes - 15 Juin</h3>
+                        <p class="card-excerpt">Venez découvrir notre club lors de notre journée portes ouvertes.
+                            Initiations gratuites, démonstrations et rencontres avec nos coachs...</p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <i class="fas fa-user"></i>
+                                <span>Bureau VSA</span>
+                            </div>
+                            <button class="read-more" onclick="openModal('modal2')">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="actualite-card">
+                    <div class="card-image">
+                        <i class="fas fa-running"></i>
+                        <span class="card-date">28 Mai 2025</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category cat-entrainement">Entraînements</span>
+                        <h3 class="card-title">Nouveaux créneaux d'entraînement</h3>
+                        <p class="card-excerpt">De nouveaux créneaux d'entraînement sont désormais disponibles pour
+                            répondre à la demande croissante de nos adhérents...</p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <i class="fas fa-user"></i>
+                                <span>Entraîneurs</span>
+                            </div>
+                            <button class="read-more" onclick="openModal('modal3')">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="voir-toutes">
+                <a href="actualites.html" class="btn-voir-toutes">
+                    <i class="fas fa-newspaper"></i> Voir toutes les actualités
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="modal-overlay news-modal" id="modal1">
+        <div class="modal">
+            <div class="modal-header">
+                <i class="fas fa-trophy"></i>
+                <span class="modal-date">5 Juin 2025</span>
+                <button class="modal-close" onclick="closeModal('modal1')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <span class="modal-category">Compétitions</span>
+                <h2 class="modal-title">Excellents résultats aux Championnats Régionaux</h2>
+                <div class="modal-content">
+                    <p>Une journée exceptionnelle pour le VSA ! Nos athlètes ont brillé de mille feux lors des
+                        championnats régionaux qui se sont déroulés le weekend dernier au stade Pierre-de-Coubertin.</p>
+
+                    <p><strong>Résultats marquants :</strong></p>
+                    <p>• <strong>Marie Dubois</strong> - 1ère place au 1500m avec un nouveau record personnel de 4'12"
+                        (ancien record : 4'18")<br>
+                        • <strong>Pierre Martin</strong> - 2ème place au saut en longueur avec un bond à 7,45m<br>
+                        • <strong>Équipe relais 4x100m</strong> - 3ème place en 42"15 et qualification pour les
+                        championnats nationaux<br>
+                        • <strong>Sarah Laurent</strong> - 1ère place au lancer de poids junior avec 14,20m<br>
+                        • <strong>Thomas Durand</strong> - 3ème place au 800m en 1'52"</p>
+
+                    <p>Ces excellents résultats sont le fruit d'un travail acharné de nos athlètes tout au long de la
+                        saison, encadrés par nos entraîneurs diplômés d'État. La préparation hivernale en salle a
+                        particulièrement porté ses fruits.</p>
+
+                    <p><strong>Prochaines échéances :</strong></p>
+                    <p>Nos qualifiés se rendront aux championnats de France qui auront lieu du 25 au 27 juin à Angers.
+                        Une délégation de supporters est en cours d'organisation pour les accompagner.</p>
+
+                    <p>Félicitations à tous nos athlètes et rendez-vous pour les nationaux où nous représenterons
+                        fièrement notre région !</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-author">
+                    <i class="fas fa-user"></i>
+                    <span>Équipe VSA</span>
+                </div>
+                <div class="modal-share">
+                    <button class="share-btn instagram" title="Partager sur Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button class="share-btn facebook" title="Partager sur Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay news-modal" id="modal2">
+        <div class="modal">
+            <div class="modal-header">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="modal-date">2 Juin 2025</span>
+                <button class="modal-close" onclick="closeModal('modal2')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <span class="modal-category">Événements</span>
+                <h2 class="modal-title">Journée Portes Ouvertes - 15 Juin</h2>
+                <div class="modal-content">
+                    <p>Le VSA vous invite à sa journée portes ouvertes le <strong>samedi 15 juin de 9h à 17h</strong> au
+                        stade municipal Jean-Moulin. Venez découvrir l'athlétisme dans une ambiance conviviale et
+                        familiale !</p>
+
+                    <p><strong>Programme détaillé :</strong></p>
+                    <p><strong>9h-12h : Initiations gratuites</strong><br>
+                        • Sprint et haies (piste d'athlétisme)<br>
+                        • Saut en longueur et triple saut (bac à sable)<br>
+                        • Lancer de poids et disque (aires de lancer)<br>
+                        • Course de demi-fond (tour de piste)</p>
+
+                    <p><strong>14h-15h : Démonstrations</strong><br>
+                        • Performances de nos athlètes élite<br>
+                        • Techniques de course et de saut<br>
+                        • Mini-compétition amicale</p>
+
+                    <p><strong>15h-16h : Rencontres avec l'équipe</strong><br>
+                        • Échanges avec nos entraîneurs diplômés<br>
+                        • Présentation des programmes d'entraînement<br>
+                        • Questions/réponses sur l'athlétisme</p>
+
+                    <p><strong>16h-17h : Présentation du club</strong><br>
+                        • Historique et palmarès du VSA<br>
+                        • Modalités d'inscription et tarifs<br>
+                        • Visite des installations</p>
+
+                    <p><strong>Informations pratiques :</strong></p>
+                    <p>• <strong>Entrée libre et gratuite</strong> pour toute la famille<br>
+                        • Tenue de sport conseillée pour les initiations<br>
+                        • Vestiaires et douches à disposition<br>
+                        • Buvette et restauration légère sur place<br>
+                        • Parking gratuit disponible</p>
+
+                    <p>C'est l'occasion parfaite de découvrir notre passion et peut-être de rejoindre notre grande
+                        famille sportive !</p>
+
+                    <p><strong>Contact :</strong> contact@vsa-club.fr | 04.XX.XX.XX.XX</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-author">
+                    <i class="fas fa-user"></i>
+                    <span>Bureau VSA</span>
+                </div>
+                <div class="modal-share">
+                    <button class="share-btn instagram" title="Partager sur Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button class="share-btn facebook" title="Partager sur Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay news-modal" id="modal3">
+        <div class="modal">
+            <div class="modal-header">
+                <i class="fas fa-running"></i>
+                <span class="modal-date">28 Mai 2025</span>
+                <button class="modal-close" onclick="closeModal('modal3')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <span class="modal-category">Entraînements</span>
+                <h2 class="modal-title">Nouveaux créneaux d'entraînement</h2>
+                <div class="modal-content">
+                    <p>Face au succès grandissant de notre club et à l'arrivée de nombreux nouveaux adhérents cette
+                        saison, nous avons le plaisir de vous annoncer l'ouverture de <strong>4 nouveaux créneaux
+                            d'entraînement</strong> à partir du 1er juin.</p>
+
+                    <p><strong>Nouveaux horaires disponibles :</strong></p>
+
+                    <p><strong>Mardi 18h30-20h : Groupe adultes débutants</strong><br>
+                        • Initiation aux différentes disciplines<br>
+                        • Préparation physique adaptée<br>
+                        • Encadrement : Julien Moreau (Éducateur territorial)</p>
+
+                    <p><strong>Mercredi 17h-18h30 : École d'athlétisme (6-12 ans)</strong><br>
+                        • Éveil athlétique par le jeu<br>
+                        • Découverte de toutes les familles (course, saut, lancer)<br>
+                        • Encadrement : Sophie Dubois (Professeure d'EPS)</p>
+
+                    <p><strong>Jeudi 19h-20h30 : Préparation physique générale</strong><br>
+                        • Renforcement musculaire<br>
+                        • Cardio-training et endurance<br>
+                        • Encadrement : Marc Leclerc (Coach sportif diplômé)</p>
+
+                    <p><strong>Samedi 10h-11h30 : Athlétisme adapté (handisport)</strong><br>
+                        • Disciplines adaptées aux différents handicaps<br>
+                        • Matériel spécialisé fourni<br>
+                        • Encadrement : Émilie Petit (Formation handisport)</p>
+
+                    <p><strong>Modalités d'inscription :</strong></p>
+                    <p>• Les inscriptions sont ouvertes dès maintenant<br>
+                        • Séance d'essai gratuite pour tous les nouveaux créneaux<br>
+                        • Matériel fourni pour les débutants<br>
+                        • Tarifs préférentiels pour les familles</p>
+
+                    <p><strong>Contact pour s'inscrire :</strong><br>
+                        • Secrétariat : 04.XX.XX.XX.XX<br>
+                        • Email : inscriptions@vsa-club.fr<br>
+                        • Sur place : Mardi et Jeudi de 18h à 20h</p>
+
+                    <p>Venez nombreux découvrir ou redécouvrir l'athlétisme avec nous !</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-author">
+                    <i class="fas fa-user"></i>
+                    <span>Entraîneurs</span>
+                </div>
+                <div class="modal-share">
+                    <button class="share-btn instagram" title="Partager sur Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button class="share-btn facebook" title="Partager sur Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section id="disciplines" class="disciplines">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Disciplines</h2>
+                <p>Découvrez toute la richesse de l'athlétisme</p>
+            </div>
+            <div class="disciplines-grid">
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Sprint</h3>
+                    <p>Courses de vitesse sur 100m, 200m et 400m pour développer votre explosivité</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                    </div>
+                    <h3>Sauts</h3>
+                    <p>Saut en longueur, hauteur, triple saut et perche pour défier la gravité</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <h3>Lancers</h3>
+                    <p>Poids, disque, javelot et marteau pour développer force et technique</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Demi-fond</h3>
+                    <p>Courses de 800m à 3000m pour l'endurance et la stratégie</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Trail</h3>
+                    <p>Course nature pour découvrir les paysages provençaux</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Marche Nordique</h3>
+                    <p>Activité douce et complète pour tous les âges</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Nordic'Fit</h3>
+                    <p>Fitness en plein air pour une remise en forme dynamique</p>
+                </div>
+                <div class="discipline-card">
+                    <div class="discipline-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Running</h3>
+                    <p>Course sur route et entraînement en groupe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Prêt à rejoindre l'aventure ?</h2>
+                    <p>Première séance d'essai offerte — venez découvrir l'athlétisme avec nous !</p>
+                </div>
+                <a href="#contact" class="btn btn-accent">Essai gratuit <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultats" class="results">
+        <div class="container">
+            <div class="section-header">
+                <h2>Résultats</h2>
+                <p>Suivez les performances de nos athlètes</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-date">15 Mai 2025</div>
+                    <h3>Championnat Régional</h3>
+                    <p>Excellents résultats de nos athlètes avec 3 podiums et 2 qualifications nationales</p>
+                    <a href="#" class="result-link" data-result="regional">Voir les détails</a>
+                </div>
+                <div class="result-card">
+                    <div class="result-date">28 Avril 2025</div>
+                    <h3>Meeting de Printemps</h3>
+                    <p>Record du club battu sur 800m par Marie Dubois en 2'15"32</p>
+                    <a href="#" class="result-link" data-result="printemps">Voir les détails</a>
+                </div>
+                <div class="result-card">
+                    <div class="result-date">12 Avril 2025</div>
+                    <h3>Cross Départemental</h3>
+                    <p>Victoire de l'équipe seniors masculins et 2ème place féminine</p>
+                    <a href="#" class="result-link" data-result="cross">Voir les détails</a>
+                </div>
+            </div>
+            <div class="voir-toutes">
+                <a href="resultats.html" class="btn-voir-toutes2">
+                    <i class="fas fa-newspaper"></i> Voir tous les résultats
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay results-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title"></h2>
+                <div class="modal-date"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="results">Résultats</button>
+                    <button class="modal-tab" data-tab="highlights">Temps forts</button>
+                    <button class="modal-tab" data-tab="conditions">Conditions</button>
+                </div>
+                <div class="tab-content active" id="results-tab"></div>
+                <div class="tab-content" id="highlights-tab"></div>
+                <div class="tab-content" id="conditions-tab"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section id="calendrier" class="calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Calendrier</h2>
+                <p>Prochaines compétitions et événements</p>
+            </div>
+            <div class="calendar-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">JUIN</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Meeting National</h3>
+                        <p>Stade Charléty, Paris</p>
+                        <span class="event-time">14h00</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">JUIN</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Championnat de France</h3>
+                        <p>Stade Décines, Lyon</p>
+                        <span class="event-time">Toute la journée</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">JUIL</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Trail des Calanques</h3>
+                        <p>Marseille</p>
+                        <span class="event-time">08h00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section id="galerie" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie</h2>
+                <p>Nos moments forts en images</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/FF6B35/FFFFFF?text=Sprint" alt="Sprint">
+                    <div class="gallery-overlay">
+                        <h3>Sprint</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/F7931E/FFFFFF?text=Sauts" alt="Sauts">
+                    <div class="gallery-overlay">
+                        <h3>Sauts</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/FFD320/FFFFFF?text=Lancers" alt="Lancers">
+                    <div class="gallery-overlay">
+                        <h3>Lancers</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/27AE60/FFFFFF?text=Trail" alt="Trail">
+                    <div class="gallery-overlay">
+                        <h3>Trail</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/3498DB/FFFFFF?text=Demi-fond" alt="Demi-fond">
+                    <div class="gallery-overlay">
+                        <h3>Demi-fond</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/9B59B6/FFFFFF?text=Marche" alt="Marche Nordique">
+                    <div class="gallery-overlay">
+                        <h3>Marche Nordique</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header-contact">
+                <h2>Contactez-nous</h2>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-card-content">
+                    <div class="contact-info-section">
+                        <div class="contact-info-header">
+                            <h3>Besoin d'information ?</h3>
+                            <p>Contactez-nous !</p>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-item-content">
+                                    <p>Stade Jules Ladoumègue Vitrolles, France</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-item-content">
+                                    <p>06 07 56 41 10</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="contact-item-content">
+                                    <p>Lun: 18h - 20h, Mar: 18h -19h30, Mer: 16h30 - 19h, <br> Jeu-Ven: 18h - 20h et
+                                        Sam: 10h30 - 11h45</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-item-content">
+                                    <p>vsa13127@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-section">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.1304518910197!2d5.242107643684921!3d43.458035715880534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9ef4196fbb3af%3A0x5fe4c973336ee390!2sStade%20Jules%20Ladoum%C3%A8gue!5e1!3m2!1sfr!2sfr!4v1749401303638!5m2!1sfr!2sfr"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-section">
+                <h2 class="social-title">Nos Réseaux Sociaux</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/vitrolles_sport_athletisme/" target="_blank"
+                        style="text-decoration: none;">
+                        <div class="social-icon" style="background: rgba(225, 48, 108, 0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#E1306C">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/vitrollessportathletisme" target="_blank"
+                        style="text-decoration: none;">
+                        <div class="social-icon" style="background: rgba(59, 89, 152, 0.2);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#4267B2">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="img/logovsa.png" alt="Logo Vitrolles Sport Athlétisme">
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Explorer</h3>
+                        <ul>
+                            <li><a href="index.html#accueil">Accueil</a></li>
+                            <li><a href="index.html#club">Le club</a></li>
+                            <li><a href="index.html#actualites">Actualités</a></li>
+                            <li><a href="index.html#disciplines">Disciplines</a></li>
+                            <li><a href="index.html#resultats">Résultats</a></li>
+                            <li><a href="competitions.html">Inscriptions</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Le VSA</h3>
+                        <ul>
+                            <li><a href="#">Le club</a></li>
+                            <li><a href="#">Nos présidents</a></li>
+                            <li><a href="#">Pôle Haute Performance</a></li>
+                            <li><a href="#">Installations sportives</a></li>
+                            <li><a href="#">Index égalité femmes/hommes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <div class="footer-column"></div>
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#">Ville de Vitrolles</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Nos partenaires</a></li>
+                        <li><a href="#">Charte régionale de la laïcité </a></li>
+                        <li><a href="#">Presse</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vitrolles Sport Athlétisme. Tous droits réservés.</p>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
